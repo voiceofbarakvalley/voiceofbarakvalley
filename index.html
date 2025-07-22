@@ -1,208 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Voice of Barak Valley – Unheard stories and unspoken truths from the heart of Southern Assam. Authored by Muazzaz Ahmed Choudhury (Faaiz Choudhury)." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Voice of Barak Valley – Unheard stories and unspoken truths from the heart of Southern Assam. Author: Muazzaz Ahmed Choudhury (Faaiz Choudhury).">
   <title>Voice of Barak Valley</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #0e0e0e;
-      color: #f5f5f5;
-      line-height: 1.7;
-    }
-    header {
-      position: relative;
-      height: 100vh;
-      background: url('images/hero.jpg') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      overflow: hidden;
-    }
-    header::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.5);
-    }
-    header h1 {
-      position: relative;
-      font-family: 'Fraunces', serif;
-      font-size: 3rem;
-      z-index: 2;
-    }
-    header p {
-      position: relative;
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      z-index: 2;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.6);
-      backdrop-filter: blur(5px);
-      padding: 10px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      z-index: 1000;
-      transition: background 0.3s ease;
-    }
-    nav a {
-      color: #f5f5f5;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #1e90ff;
-    }
-    section {
-      padding: 80px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .section-title {
-      font-family: 'Fraunces', serif;
-      font-size: 2.2rem;
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .alt {
-      background: #1c1c1c;
-      border-radius: 10px;
-      padding: 60px 20px;
-    }
-    .about-book p {
-      text-align: center;
-      font-size: 1.05rem;
-      max-width: 800px;
-      margin: auto;
-      color: #dcdcdc;
-    }
-    .author-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 20px;
-    }
-    .author-card img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #1e90ff;
-    }
-    .author-card h3 {
-      font-family: 'Fraunces', serif;
-      font-size: 1.5rem;
-    }
-    /* Subscribe */
-    .subscribe-form {
-      text-align: center;
-    }
-    .subscribe-form input[type="email"], 
-    .subscribe-form input[type="text"] {
-      padding: 10px;
-      width: 250px;
-      margin: 5px;
-      border: none;
-      border-radius: 4px;
-    }
-    .subscribe-form input[type="submit"] {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      background: #1e90ff;
-      color: white;
-      cursor: pointer;
-      margin-top: 10px;
-      transition: background 0.3s ease;
-    }
-    .subscribe-form input[type="submit"]:hover {
-      background: #1877d0;
-    }
-    footer {
-      background: #111;
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-      line-height: 1.6;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <a href="#about">About the Book</a>
-    <a href="#author">Author</a>
-    <a href="#subscribe">Subscribe</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <header>
-    <h1>Voice of Barak Valley</h1>
-    <p>Unheard stories and unspoken truths from the heart of Southern Assam</p>
+  <header class="navbar">
+    <div class="logo">Voice of Barak Valley</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#book">Book</a>
+      <a href="#author">Author</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- About the Book -->
-  <section id="about" class="about-book">
-    <h2 class="section-title">About the Book</h2>
-    <p>
-      History is not always written in ink—it survives in memories, spoken words, and fading documents. <strong>Voice of Barak Valley</strong> is a tribute to the socio-political journey of Southern Assam, its people, and the voices that shaped its identity.
-    </p>
-  </section>
-
-  <!-- About the Author -->
-  <section class="section alt" id="author">
-    <h2 class="section-title">About the Author</h2>
-    <div class="author-card">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjU7aEp0o_taAohxgXb6qSgdoF7iOD0fCJlsMCM-RImjo6xDdD-B92X1cZL6m4wIgBv6h5HQwUTgZc8v0cmVumlmXqRfjHPU3x38J-sJD77U1yId8vQH2SOaDKVnBBneDnZJj4nUbC6YrRLy9D40M3DZb1sy6TIm_U3Z8LE1A/s1600/profile.jpg" alt="Photo of Faaiz Choudhury" />
-      <div>
-        <h3>Muazzaz Ahmed Choudhury</h3>
-        <p>Also known as <strong>Faaiz Choudhury</strong> – law student, writer, and music producer. He brings forth the untold legacy of the Barak Valley with a mission to preserve memory and identity.</p>
-      </div>
+  <section class="hero fade-in">
+    <div class="overlay"></div>
+    <div class="hero-content slide-up">
+      <h1>Voice of Barak Valley</h1>
+      <p>Unheard stories and unspoken truths from the heart of Southern Assam</p>
     </div>
   </section>
 
-  <!-- Subscribe -->
-  <section id="subscribe" class="section">
-    <h2 class="section-title">Subscribe for Updates</h2>
-    <div class="subscribe-form">
-      <form action="https://gmail.us12.list-manage.com/subscribe/post?u=a2b5730958ebc02a5239594f9&amp;id=208c52055a&amp;f_id=00b4e6e0f0" method="post" target="_blank">
-        <input type="text" name="FNAME" placeholder="Your Name" required>
-        <input type="email" name="EMAIL" placeholder="Your Email" required>
-        <input type="submit" value="Subscribe">
-      </form>
-    </div>
+  <section id="about" class="section fade-in">
+    <h2>About the Book</h2>
+    <p>History is not always written in ink—it survives in memories and voices passed through generations. Voice of Barak Valley is a tribute to the socio-political journey of Southern Assam, capturing its struggles, contributions, and cultural essence.</p>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section alt">
-    <h2 class="section-title">Contact</h2>
-    <p style="text-align: center;">
-      Email: <a href="mailto:faaiz.choudhuryy@gmail.com" style="color: #1e90ff;">faaiz.choudhuryy@gmail.com</a>
-    </p>
+  <section id="author" class="section author fade-in">
+    <h2>About the Author</h2>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZvl1iYpPCpB4Dg06T7tM5n_rkMDFQjTfCPZr1T8PKw1E4b9kVUM5hUhBbmhyG9gDzfs0P4C_kfF-u7j_3W8lu82FECmDCkC7yD3hUPoLMu-PeM4pMZjT4grDohUuP3u7ttYO-0BqJ3yIQnqIjDjUz9u2AaeUz8g/s320/profile.jpg" alt="Faaiz Choudhury">
+    <p>Muazzaz Ahmed Choudhury (Faaiz Choudhury) is a law student, writer, and music producer dedicated to preserving the forgotten narratives of Southern Assam.</p>
   </section>
 
-  <footer>
-    © 2025 Voice of Barak Valley.<br>
-    Created by Faaiz Choudhury.<br>
-    All rights reserved.<br>
-    New Delhi, India
+  <section id="contact" class="section contact fade-in">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/mnqekqkl" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="fade-in">
+    <p>© 2025 Voice of Barak Valley.</p>
+    <p>Created by Faaiz Choudhury.</p>
+    <p>All rights reserved.</p>
+    <p>New Delhi, India</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+---
+
+style.css
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  background-color: #0e0e0e;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.85);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  transition: transform 0.3s;
+}
+.logo:hover { transform: scale(1.05); }
+
+.nav-links a {
+  color: #f5f5f5;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+  transform: translateY(-2px);
+}
+
+.hero {
+  height: 100vh;
+  background: url('images/hero.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  color: #ddd;
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-in-out;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00aaff;
+}
+
+.author img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input, .contact textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact button {
+  padding: 0.8rem;
+  background: #00aaff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.contact button:hover {
+  background: #0088cc;
+  transform: translateY(-3px);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.fade-in { opacity: 0; transform: translateY(40px); }
+
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 2.3rem; }
+  .nav-links { display: none; }
+}
+
+
+---
+
+script.js
+
+// Scroll animations
+const elements = document.querySelectorAll('.fade-in, .slide-up');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+elements.forEach(el => observer.observe(el));
+
+
