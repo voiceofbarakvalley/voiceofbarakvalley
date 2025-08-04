@@ -1,111 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Voice of Barak Valley – Unheard stories and unspoken truths from the heart of Southern Assam.">
-  <title>Voice of Barak Valley</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Voice of Barak Valley (Assam) by Muazzaz Ahmed Choudhury (Faaiz) - Unheard Stories, Unspoken Truths from the Soul of Southern Assam." />
+  <title>Voice of Barak Valley (Assam)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0b0c2a;
+      color: #fff;
+      display: flex;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: #111234;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 10;
+    }
+    nav a {
+      color: #f4c430;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      margin-left: 200px;
+      width: calc(100% - 200px);
+    }
+    section {
+      padding: 60px 30px;
+      min-height: 100vh;
+      border-bottom: 1px solid #333;
+    }
+    #hero {
+      background: url('https://voiceofbarakvalley.github.io/assets/hero-banner.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #f4c430;
+    }
+    #hero p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      max-width: 600px;
+    }
+    #cover img {
+      max-width: 300px;
+      width: 100%;
+      border: 2px solid #f4c430;
+      border-radius: 10px;
+    }
+    .buy-links a {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 10px 20px;
+      background-color: #f4c430;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111234;
+      color: #aaa;
+    }
+    @media screen and (max-width: 768px) {
+      nav {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      main {
+        margin-left: 0;
+        width: 100%;
+      }
+      #hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">Voice of Barak Valley</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#author">Author</a>
-      <a href="#subscribe">Subscribe</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#why">Why This Book</a>
+    <a href="#buy">Buy Now</a>
+    <a href="#contact">Contact</a>
+  </nav>  <main>
+    <section id="hero">
+      <h1>Voice of Barak Valley (Assam)</h1>
+      <p>Unheard Stories, Unspoken Truths from the Soul of Southern Assam by Muazzaz Ahmed Choudhury (Faaiz)</p>
+    </section><section id="cover">
+  <img src="https://voiceofbarakvalley.github.io/assets/book-cover.jpg" alt="Voice of Barak Valley Book Cover" />
+</section>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Voice of Barak Valley</h1>
-      <p>Unheard stories and unspoken truths from the soul of Southern Assam</p>
-      <span class="badge">Coming Soon</span>
-    </div>
-  </section>
+<section id="about">
+  <h2>About the Author</h2>
+  <p>Muazzaz Ahmed Choudhury, known as Faaiz, is a writer, researcher, and passionate voice from Assam's Barak Valley. With deep cultural ties to the region, he aims to amplify the voices and struggles that often go unheard in mainstream narratives.</p>
+</section>
 
-  <section id="about" class="section">
-    <h2>About the Book</h2>
-    <p>
-      History is not always written in ink—it survives in memories, spoken words, and fading documents. <em>Voice of Barak Valley</em> aims to preserve the socio-political journey of Southern Assam, capturing its struggles, contributions, and unspoken truths that deserve a place in history.
-    </p>
-  </section>
+<section id="why">
+  <h2>Why This Book Was Written</h2>
+  <p>This book was written to shine a light on the neglected yet rich cultural, political, and social life of the Barak Valley. It serves as a tribute to a region often misunderstood and misrepresented, offering a platform for its people, stories, and resilience.</p>
+</section>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Voice of Barak Valley – Unheard stories and unspoken truths from the heart of Southern Assam.">
-  <title>Voice of Barak Valley</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="navbar">
-    <div class="logo">Voice of Barak Valley</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#author">Author</a>
-      <a href="#subscribe">Subscribe</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<section id="buy" class="buy-links">
+  <h2>Buy the Book</h2>
+  <a href="https://www.amazon.in/dp/B0CZ7RJLZT" target="_blank">Amazon Kindle</a>
+  <a href="https://notionpress.com/read/voice-of-barak-valley-assam" target="_blank">Paperback (Notion Press)</a>
+</section>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Voice of Barak Valley</h1>
-      <p>Unheard stories and unspoken truths from the heart of Southern Assam</p>
-      <span class="badge">Coming Soon</span>
-    </div>
-  </section>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: faaizxchoudhury@gmail.com</p>
+  <p>Instagram: <a href="https://instagram.com/faaizxchoudhury" target="_blank">@faaizxchoudhury</a></p>
+</section>
 
-  <section id="about" class="section">
-    <h2>About the Book</h2>
-    <p>
-      History is not always written in ink—it survives in memories, spoken words, and fading documents. <em>Voice of Barak Valley</em> aims to preserve the socio-political journey of Southern Assam, capturing its struggles, contributions, and unspoken truths that deserve a place in history.
-    </p>
-  </section>
+<footer>
+  &copy; 2025 Voice of Barak Valley. All rights reserved.
+</footer>
 
-  <section id="author" class="section author">
-    <h2>About the Author</h2>
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZvl1iYpPCpB4Dg06T7tM5n_rkMDFQjTfCPZr1T8PKw1E4b9kVUM5hUhBbmhyG9gDzfs0P4C_kfF-u7j_3W8lu82FECmDCkC7yD3hUPoLMu-PeM4pMZjT4grDohUuP3u7ttYO-0BqJ3yIQnqIjDjUz9u2AaeUz8g/s320/profile.jpg" alt="Faaiz Choudhury">
-    <p>
-      Muazzaz Ahmed Choudhury (Faaiz Choudhury) is a law student, writer, and music producer dedicated to bringing the forgotten narratives of Barak Valley to the forefront.
-    </p>
-  </section>
-
-  <section id="subscribe" class="section subscribe">
-    <h2>Subscribe for Updates</h2>
-    <!-- Mailchimp Form -->
-    <div id="mc_embed_signup">
-      <form action="https://gmail.us12.list-manage.com/subscribe/post?u=a2b5730958ebc02a5239594f9&amp;id=208c52055a&amp;f_id=00b4e6e0f0"
-        method="post" target="_blank" class="subscribe-form">
-        <input type="email" name="EMAIL" placeholder="Your Email" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <form action="https://formspree.io/f/mnqekqkl" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>© 2025 Voice of Barak Valley.</p>
-    <p>Created by Faaiz Choudhury.</p>
-    <p>All rights reserved.</p>
-    <p>New Delhi, India</p>
-  </footer>
-  <script src="script.js"></script>
+  </main>
 </body>
 </html>
